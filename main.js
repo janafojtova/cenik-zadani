@@ -19,19 +19,19 @@ const selectPlan = (planNumber)=>{
     if(planNumber===1){        
         volbaJedna.classList.add("plan--selected")
         //tady mám asi chybu nedaří se mi odznačit nezvolené volby
-        volbaDva.classList.add("plan")
-        volbaTri.classList.add("plan")
+        volbaDva.classList.remove("plan--selected")
+        volbaTri.classList.remove("plan--selected")
 
     }else if(planNumber===2){        
         volbaDva.classList.add("plan--selected")
         //tady mám asi chybu nedaří se mi odznačit nezvolené volby
-        volbaTri.classList.add("plan")
-        volbaJedna.classList.add("plan")
+        volbaTri.classList.remove("plan--selected")
+        volbaJedna.classList.remove("plan--selected")
 
     }else if(planNumber===3){        
         volbaTri.classList.add("plan--selected")
         //tady mám asi chybu nedaří se mi odznačit nezvolené volby
-        volbaDva.classList.add("plan")
-        volbaJedna.classList.add("plan")
+        volbaDva.classList.remove("plan--selected")
+        volbaJedna.classList.remove("plan--selected")
     }
 }
